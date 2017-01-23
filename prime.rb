@@ -15,7 +15,7 @@ def prime?(number)
     array.each do |divisor|
       if ((number.to_f/divisor.to_f) == (number.to_i/divisor.to_i))
     #for divisor in (2...number)
-      #if ((number.to_f/divisor.to_f) == (number.to_i/divisor.to_i))
+      #if (number.to_f % divisor.to_f) == 0
         return false
       end
     end
